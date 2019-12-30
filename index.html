@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<meta id="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset = "UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<title> Rebecca Wong </title>
+
+<button id = 'navbar-button'> <img src = 'graphics/sidebar.png' /> </button>
+
+<div class = 'navbar'>
+	<div class = 'navbar-container'>
+		<h2><a href = "index.html"> about </a></h2>
+		<h2>
+	</div>
+</div>
+
+<div class = "sections">
+	<div id = "hello" class = "whole-container" >
+		<img src = "graphics/hello.png" id = 'hello-graphic' class = 'overlay-text' />
+		<div class = "pink-circle"><div class = "rebecca"></div></div>
+		<button class = "down-arrow-bounce"><a href = "#cs-sect"> <img src = "graphics/arrow.png" /></a></button>
+	</div>
+
+	<div id = "cs-sect" class = "whole-container" >
+		<canvas id = "binary-rain"></canvas>
+		<h2 class = "overlay-text" style = "left: 15vw; top: 10vw; text-align: right; font-size: 4.5vw; color: #68483c;">i'm a <br/>computer <br/>science <br/>major</h2>
+		<h1 class = "overlay-text" style ="bottom: 0; left: 48vw">at UC Berkeley</h1>
+		<button class = "up-arrow"><a href = "#hello"><img src = "graphics/arrow.png" /></a></button>
+		<button class = "down-arrow"><a href = "#graphic-design-sect"><img src = "graphics/arrow.png" /></a></button>
+		<img src = "graphics/cs-05.png" class = "fill-whole-section" id = 'cs-graphic' />
+		
+	</div>
+
+	<div id = "graphic-design-sect" class = "whole-container">
+		<button class = "up-arrow"><a href = "#cs-sect"><img src = "graphics/arrow.png" /></a></button>
+		<button class = "down-arrow"><a href = "#bake-sect"><img src = "graphics/arrow.png" /></a></button>
+		<h2 class = "overlay-text" style = "left: 23vw; top:9vw; font-size: 5.5vw">i'm a <br/>  graphic<br /> designer</h2>
+		<a href = "https://rebeccacwong.github.io/portfolio/graphic-design.html" class = 'call-to-action' id='design-call'><h3>view my portfolio <img src = 'graphics/thin arrow.png' class = 'arrow-slide' style = "left: 12.5vw"/></a></h3>
+	</div>
+
+	<div id = "bake-sect" class = "whole-container">
+		<button class = "up-arrow"><a href = "#graphic-design-sect"><img src = "graphics/arrow.png" /></a></button>
+		<button class = "down-arrow"><a href = "#get-started"><img src = "graphics/arrow.png" /></a></button>
+		<img data-src = "graphics/baker.png" id = "baker-text" class = 'overlay-text'/>
+		<h2 class = "overlay-text" style="left: 17vw; top: 8vw; font-size: 4vw; text-align: right; color: #68483c">i'm a <br /> baker<br /> and cake <br /> decorator</h2>
+		<h3>
+			<a href = "https://rebeccacwong.github.io/baking-portfolio/" target="_blank" class = 'call-to-action' id='bake-call'>view the sweet treats <img src = 'graphics/thin arrow.png' class = 'arrow-slide' style = "left: 15vw"/></a>
+		</h3>
+		<img src = "graphics/baking-04.png" class = 'fill-whole-section' />
+	</div>
+
+	<div id = "get-started" class = 'whole-container'>
+		<div id = "subsection-get-started">
+			<h1 style = "margin: 0; padding: 0">Let's get in touch.</h1>
+			<table id = 'icons'>
+				<tr>
+					<td><a href = "https://www.linkedin.com/in/rebeccacwong25/" target="_blank"><img src = "graphics/linkedin.png" style = "border-radius: 50%" /></a></td>
+					<td><a href = "https://github.com/rebeccacwong" target="_blank"><img src = "graphics/github.png" /></a></td>
+					<td><a href = "mailto:rebeccacwong25@gmail.com"><img src = "graphics/mail.png"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class = "pink-circle"><div class = "rebecca"></div></div>
+		<div id = "back-to-top">
+			<a href = "#hello"><img src ="graphics/arrow.png" style = "transform: rotate(180deg)" /><h4>back to top</h4></a>
+		</div>
+	</div>
+
+</div>
+
+<script src = "script.js"></script>
+
+</html>
