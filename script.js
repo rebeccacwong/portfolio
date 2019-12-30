@@ -35,8 +35,12 @@ $(".down-arrow-bounce").hover(
 /** NAVIGATION ANIMATION **/
 const navButton = document.querySelector('#navbar-button');
 navButton.addEventListener('click', function() {
-	$('.navbar').slideToggle();
+	toggleNav()
 })
+
+function toggleNav() {
+	$('.navbar').slideToggle();
+}
 
 /** CALL TO ACTION ANIMATION **/
 var computed = 0;

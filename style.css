@@ -24,6 +24,7 @@
 
 }
 
+/** GENERAL **/
 html, body{
 	margin:0px; 
 	padding:0px;
@@ -63,7 +64,7 @@ a {
 }
 a:hover {
 	color: #599a9f;
-	transition: 0.5s ease 0.5s;
+	transition: 0.5s ease;
 }
 .overlay-text {
 	position: absolute;
@@ -71,6 +72,23 @@ a:hover {
 	transition: 0.5s ease;
 	display: show;
 }
+img {
+	max-width: 100%;
+}
+button:focus {
+	outline: 0;
+}
+button {
+	text-decoration: none;
+	border: none;
+	background: none;
+	margin-top: 1vw;
+	padding: 0;
+	cursor: pointer;
+}
+
+
+/** NAVIGATION **/
 .navbar {
 	display: none;
 	top: 0;
@@ -83,9 +101,34 @@ a:hover {
 	z-index: 50;
 	overflow: hidden;
 }
-img {
-	max-width: 100%;
+#navbar-button {
+	position: fixed;
+	top: 2vw;
+	left: 2vw;
+	z-index: 100;
 }
+.navbar-container h2 {
+	font-size: 4vw;
+}
+#navbar-button, #navbar-x {
+	transition: 0.5s ease;
+}
+#navbar-button:hover, #navbar-x:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.navbar-container {
+	padding: 10vw;
+	object-position: center;
+}
+#navbar-x {
+	position: absolute;
+	width: 2vw;
+	top: 2vw;
+	right: 2vw;
+}
+
+/** SECTIONING **/
 .sections {
 	height: 100vh;
 	min-height: 100vh;
@@ -105,34 +148,7 @@ img {
 	scroll-snap-align: start;
 	vertical-align: bottom;
 }
-button:focus {
-	outline: 0;
-}
-button {
-	text-decoration: none;
-	border: none;
-	background: none;
-	margin-top: 1vw;
-	padding: 0;
-	cursor: pointer;
-}
-#navbar-button {
-	position: fixed;
-	top: 2vw;
-	left: 2vw;
-	z-index: 100;
-}
-#navbar-button {
-	transition: 0.5s ease;
-}
-#navbar-button:hover {
-	opacity: 0.5;
-	cursor: pointer;
-}
-.navbar-container {
-	padding: 10vw;
-	object-position: center;
-}
+
 .call-to-action {
 	z-index: 10;
 	margin-top: 0;
