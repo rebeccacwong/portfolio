@@ -103,9 +103,10 @@ button {
 }
 #navbar-button {
 	position: fixed;
-	top: 2vw;
-	left: 2vw;
+	top: 2.5vh;
+	left: 2.5vh;
 	z-index: 100;
+	width: 8vh;
 }
 .navbar-container h2 {
 	font-size: 4vw;
