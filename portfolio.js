@@ -16,14 +16,21 @@ var curr = 0;	// front frame, index in dynamic frames in html
 const frames = $(".frame td").toArray();
 const captions = $(".overlay td").toArray();
 const imgs = $(".frame img");
+var interval = setInterval(slide, 4000);
 
-// for (i = 1; i < imgs.length; i++) {
-// 	$(imgs[i]).hover(function() {
-// 		console.log('hovered')
-// 		clearInterval(interval);
-// 	}, function() {
-// 		interval = setInterval(3000);
-// 		console.log('off')
+
+// for (var i = 0; i < imgs.length; i++) {
+
+// 	// $(imgs[i]).hover(function() {
+// 	// 	console.log('hovered')
+// 	// 	clearInterval(interval);
+// 	// }, function() {
+// 	// 	interval = setInterval(3000);
+// 	// 	console.log('off')
+// 	// })
+// 	console.log(imgs[i])
+// 	$(imgs[i]).click(function() {
+// 		shrink();
 // 	})
 // }
 
@@ -37,7 +44,7 @@ function slideCarousel(amount, direction) {
 	var html = "<td>" + frames[front].innerHTML + "</td>";
 	var html2 = "<td></td>";
 	var pos = $(".portfolio-slideshow").scrollLeft();
-	console.log(pos);
+	// console.log(pos);
 	if (direction == 1) {
 		$(".portfolio-slideshow").animate({ scrollLeft: '+=' + amount.toString() }, 1000);
 	} else {
@@ -51,23 +58,33 @@ function slideCarousel(amount, direction) {
 	$('.frame tr')[0].innerHTML += html;
 	$('.frame tr')[1].innerHTML += html2;
 	$('.overlay tr')[0].innerHTML += "<td>" + captions[front].innerHTML + "</td>";
+	var newImg = $(".frame img");
+	newImg = newImg[newImg.length - 1];
+	console.log(newImg);
+	$(newImg).click(function() {
+		shrink();
+	})
 	front = (front + 1) % Math.round(frames.length / 2);
-	// console.log($('frame img:last-child'));
-	// $('frame img:last-child').hover(function() {
-	// 	console.log('hovered')
-	// 	clearInterval(interval);
-	// }, function() {
-	// 	interval = setInterval(3000);
-	// })
-	console.log(front);
-	console.log($(".frame td"));
+	// console.log(front);
+	// console.log($(".frame td"));
 	interval = setInterval(slide, 4000);
 }
 
+// function shrink() {
+// 	alert("shrink");
+// 	// $(".frame").css(height, "40vh");
+// 	$(".frame").animate({
+// 		height: "40vh"
+// 	}, 1000)
+// 	$(".frame").animate({
+// 		width: "20vh"
+// 	}, 1000);
+// 	$(".portfolio-slideshow").animate({
+// 		height: "40vh"
+// 	}, 1000)
+// }
 
 // $(".portfolio-slideshow").scroll(function() {console.log("scrolled")})
-
-var interval = setInterval(slide, 4000)
 
 /** NAVIGATION ANIMATION **/
 const navButton = document.querySelector('#navbar-button');

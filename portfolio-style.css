@@ -60,11 +60,11 @@
 	table-layout: fixed;
 	font-family: 'lumiera_handwritingregular';
 	font-weight: lighter;
-	font-size: 3.2vw;
+	font-size: 5vh;
 	text-align: center;
 }
 .overlay td {
-	border: none;
+	border: 1px solid transparent;
 }
 /*.overlay td {
 	padding: 1vw;
@@ -76,14 +76,14 @@
 	
 }*/
 .overlay {
-	bottom: 17.5vw;
+	top: 41.5vh;
 }
 .frame {
 /*	width: 100%;*/
 /*	border: 1px solid black;*/
 	border-collapse: separate;
 	table-layout: fixed;
-	height: 100%;
+	height: inherit;
 	transition: 0.5s ease;
 }
 .overlay {

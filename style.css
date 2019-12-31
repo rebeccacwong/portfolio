@@ -46,12 +46,18 @@ h2 {
 	font-family: 'lumieraregular';
 	font-weight: lighter;
 	color: #2b2b2b;
+	font-size: 2.5vw;
 }
 h4 {
 	font-family: 'lumieraregular';
 	font-weight: lighter;
 	color: #2f5154;
 	font-size: 1.5vw;
+}
+h5 {
+	font-family: 'lumiera_handwritingregular';
+	font-weight: lighter;
+	font-size: 2vw;
 }
 h1 {
 	font-family: 'lumiera_handwritingregular';
