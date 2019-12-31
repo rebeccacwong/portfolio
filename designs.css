@@ -137,9 +137,9 @@
 /*		max-height: vw;*/
 /*		border: 1px solid blue;*/
 	}
-	#garb-table .carousel-container {
+/*	#garb-table .carousel-container {
 		height: 29vw;
-	}
+	}*/
 	.carousel-slide {
 		transform: none;
 		transition: 0.5s ease-in-out;
@@ -150,7 +150,7 @@
 		margin: 0 auto;
 	}
 	#portfolio-down-bounce {
-		left: -40vw;
+		left: -45vw;
 		bottom: 9vw;
 		margin: 0 auto;
 		margin-top: 5vw;
