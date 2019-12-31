@@ -100,10 +100,6 @@
 	height: 4vh;
 	border-top: none;
 }
-.frame img:hover {
-	cursor: pointer;
-	opacity: 0.7;
-}
 .portfolio-slideshow {
 	width: 90%;
 	margin: 0 auto;

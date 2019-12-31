@@ -19,8 +19,9 @@
 }
 
 /* GENERAL */
-	* {
+	p {
 		font-family: 'poppinslight';
+		font-size: 1vw;
 		
 	}
 	b {
@@ -31,11 +32,12 @@
 	}
 	.wrapper {
 		position: relative;
-		top: 8vw;
-		max-height: 65vw;
+		top: 9vw;
+		max-height: 50vw;
 		overflow-wrap: auto;
 		width: 80%;
 		margin: 0 auto;
+/*		border: 1px solid green;*/
 	}
 
 
@@ -123,12 +125,17 @@
 
 
 /** GRAPHIC DESIGN */
+	.design-crop {
+		object-fit: cover;
+		width: 35vw;
+	}
 	.carousel-container {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		overflow-y: hidden;
-		max-height: 35vw;
+/*		max-height: vw;*/
+/*		border: 1px solid blue;*/
 	}
 	#garb-table .carousel-container {
 		height: 29vw;
@@ -144,7 +151,7 @@
 	}
 	#portfolio-down-bounce {
 		left: -40vw;
-		bottom: 13vw;
+		bottom: 9vw;
 		margin: 0 auto;
 		margin-top: 5vw;
 	}
@@ -152,4 +159,7 @@
 		margin: 0;
 		padding: 0;
 		vertical-align: top;
+	}
+	.design-header {
+		margin-top: 10vw;
 	}

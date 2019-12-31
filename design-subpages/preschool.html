@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta id="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../designs.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<meta charset = "UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<title> Rebecca Wong </title>
+
+<button id = 'navbar-button'> <img src = '../graphics/sidebar.png' /> </button>
+
+<div class = 'navbar'>
+	<img src = "../graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
+	<div class = 'navbar-container'>
+		<h2><a href = "../index.html"> about </a></h2>
+		<h2><a href = "../portfolio.html"> graphic design</a></h2>
+<!-- 		<h2>web design</h2> -->
+		<h2><a href = "../index.html#get-started">contact</a></h2>
+	</div>
+</div>
+
+<div class = 'header'>
+	<table class = 'secret'>
+		<tr>
+			<td><h1 style = "font-size: 5vh; margin: 0" onclick="openNav()">Rebecca Wong</h1></td>
+			<td><img src = "../graphics/portrait.png" style = "width: 7vh" onclick="openNav()" /></td>
+		</tr>
+	</table>
+</div>
+
+<body>
+	<section id = 'preschool'>
+		<div class = 'wrapper' style = "width: 88%">
+			<table  class = 'carousel' id = 'preschool-table'>
+				<tr>
+					<td width = "50%"> 
+						<div class = 'carousel-container'>
+							<div class = 'carousel-slide' id = 'slide'>
+								<img src = "../designs/preschool preview square blue.png" class = "design-crop"/>
+								<img src = '../designs/preschool preview night orange.png' style = 'margin-top: 10vw;' class = "design-crop"/>
+							</div>
+						</div>
+					</td>
+					<td>
+						<h2 class = "design-header">preschool preview night </h2>
+						<p>This logo was designed for a recurring event hosted by the<a href = "https://www.ggmg.org/"> Golden Gate Mother's Group.</p></a>
+						<p>The client wanted something that would represent the event and also tie back in with the central branding of the organization, so the logo matches the organization's color scheme and Golden Gate symbol. Balloons are also a central theme at the event.</p>
+						<a href = "../portfolio.html"><h5>back to graphic design</h5></a>
+					</td>
+				</tr>
+				<tr>
+						<td width = '50%'>
+							<button class = 'down-arrow-bounce bounce' id = "portfolio-down-bounce">
+							<img src = "../graphics/arrow.png">
+						</button>
+						</td>
+					</tr>
+			</table>
+		</div>
+	</section>
+
+</body>
+
+</html>
+
+<script src="../script.js"></script>
+<script src="../designs.js"></script>
