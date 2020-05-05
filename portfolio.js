@@ -1,10 +1,10 @@
 /** INITIALIZATION **/
-$('html').css('display', 'none');
+// $('html').css('display', 'none');
 $(document).ready(main);
 function main() {
-	$('html:not(.overlay-text)').fadeIn(800);
-	$('.overlay-text').css('display', 'none');
-	// $('.portfolio-slideshow').scrollLeft(400);
+	// $('html:not(.overlay-text)').fadeIn(800);
+	// $('.overlay-text').css('display', 'none');
+	$('.portfolio-slideshow').scrollLeft(400);
 }
 function toggleNav() {
 	$('.navbar').slideToggle();
@@ -51,7 +51,7 @@ function slideCarousel(amount, direction) {
 		$(".portfolio-slideshow").animate({ scrollLeft: '-=' + amount.toString() }, 1000);
 		console.log('reverse')
 	}
-	
+
 	// $('table tr').find('td:eq(' + curr + '),th:eq(' + curr + ')').remove();
 	// $('table tr').find('td:eq(' + curr + '),th:eq(' + curr + ')').innerHTML = "";
 	// console.log($(".frame tr"));
@@ -65,26 +65,8 @@ function slideCarousel(amount, direction) {
 		shrink();
 	})
 	front = (front + 1) % Math.round(frames.length / 2);
-	// console.log(front);
-	// console.log($(".frame td"));
 	interval = setInterval(slide, 4000);
 }
-
-// function shrink() {
-// 	alert("shrink");
-// 	// $(".frame").css(height, "40vh");
-// 	$(".frame").animate({
-// 		height: "40vh"
-// 	}, 1000)
-// 	$(".frame").animate({
-// 		width: "20vh"
-// 	}, 1000);
-// 	$(".portfolio-slideshow").animate({
-// 		height: "40vh"
-// 	}, 1000)
-// }
-
-// $(".portfolio-slideshow").scroll(function() {console.log("scrolled")})
 
 /** NAVIGATION ANIMATION **/
 const navButton = document.querySelector('#navbar-button');
