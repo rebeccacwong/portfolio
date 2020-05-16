@@ -91,6 +91,18 @@ function checkAnimation() {
 	}
 }
 
+
+
+var laptopAnimationData = {
+	container: document.getElementById("laptop-container"),
+	renderer: 'svg',
+	autoplay: true,
+	loop: true,
+	path: 'js/laptop.json'
+}
+
+var laptopAnimation = lottie.loadAnimation(laptopAnimationData);
+
 $(window).scroll(function(){
     checkAnimation();
 });
