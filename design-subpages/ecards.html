@@ -1,77 +1,127 @@
 <!DOCTYPE html>
 <html>
-<meta id="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../designs.css">
-<link rel="stylesheet" type="text/css" href="../style.css">
-<meta charset = "UTF-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../css/designs.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <meta charset="UTF-8" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="../favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="../favicon/favicon-16x16.png"
+  />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-<title> Rebecca Wong </title>
+  <title>Rebecca Wong</title>
 
-<button id = 'navbar-button'> <img src = '../graphics/sidebar.png' /> </button>
+  <button id="navbar-button"><img src="../graphics/sidebar.png" /></button>
 
-<div class = 'navbar'>
-	<img src = "../graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
-	<div class = 'navbar-container'>
-		<h2><a href = "../index.html"> about </a></h2>
-		<h2><a href = "../portfolio.html"> graphic design</a></h2>
-<!-- 		<h2>web design</h2> -->
-		<h2><a href = "../index.html#get-started">contact</a></h2>
-	</div>
-</div>
+  <div class="navbar">
+    <img src="../graphics/x.png" id="navbar-x" onclick="toggleNav()" />
+    <div class="navbar-container">
+      <h2><a href="../index.html"> about </a></h2>
+      <h2><a href="../portfolio.html"> graphic design</a></h2>
+      <!-- 		<h2>web design</h2> -->
+      <h2><a href="../index.html#get-started">contact</a></h2>
+    </div>
+  </div>
 
-<div class = 'header'>
-	<table class = 'secret'>
-		<tr>
-			<td><h1 style = "font-size: 5vh; margin: 0" onclick="toggleNav()">Rebecca Wong</h1></td>
-			<td><img src = "../graphics/portrait.png" style = "width: 7vh" onclick="toggleNav()" /></td>
-		</tr>
-	</table>
-</div>
+  <div class="header">
+    <table class="secret">
+      <tr>
+        <td>
+          <h1 style="font-size: 5vh; margin: 0;" onclick="toggleNav()">
+            Rebecca Wong
+          </h1>
+        </td>
+        <td>
+          <img
+            src="../graphics/portrait.png"
+            style="width: 7vh;"
+            onclick="toggleNav()"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
 
-<body>
-	<section id = 'ecards'>
-		<div class = 'wrapper' style = "width: 88%">
-			<table class = 'carousel' id = 'garb-table'>
-				<tr>
-					<td width = "50%">
-						<div class = 'carousel-container'>
-							<div class = 'carousel-slide' id = 'slide'>
-								<!-- <img src = "./graphics/s'mores-cake-layers.gif" id='last'/> -->
-								<img src = "../designs/new-job.gif" style = "width: 38vw; margin: 0 auto; padding-bottom: 6vw; padding-top: 9vw;"/>
-								<img src = '../designs/graduation.gif' style = "width: 38vw; margin: 0 auto; padding-bottom: 9vw; padding-top: 9vw;"/>
-								<img src = '../designs/thank-you.gif' style = "width: 38vw; margin: 0 auto; padding-top: 6vw;" />
-						<!-- 		<img src = './graphics/opera-cake2.gif' id='first'/> -->
-							</div>
-						</div>
-					</td>
-					<td>
-						<h2 class = "design-header">school of information ecards</h2>
-						<p>With the switch to online education due to COVID-19, the Berkeley School of Information had new graphic needs
-						for ecards to send out to alumni and students.</p>
-						<p>This set of ecards was created using Adobe After Effects and Illustrator.</p>
-						<a href = "../portfolio.html"><h5>back to graphic design</h5></a>
-					</td>
-				</tr>
-				<tr>
-					<td width = '50%'>
-						<button class = 'down-arrow-bounce bounce' id = "portfolio-down-bounce">
-						<img src = "../graphics/arrow.png">
-					</button>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</section>
-
-</body>
-
+  <body>
+    <section id="ecards">
+      <div class="wrapper" style="width: 88%;">
+        <table class="carousel" id="garb-table">
+          <tr>
+            <td width="50%">
+              <div class="carousel-container">
+                <div class="carousel-slide" id="slide">
+                  <!-- <img src = "./graphics/s'mores-cake-layers.gif" id='last'/> -->
+                  <img
+                    src="../designs/new-job.gif"
+                    style="
+                      width: 38vw;
+                      margin: 0 auto;
+                      padding-bottom: 6vw;
+                      padding-top: 9vw;
+                    "
+                  />
+                  <img
+                    src="../designs/graduation.gif"
+                    style="
+                      width: 38vw;
+                      margin: 0 auto;
+                      padding-bottom: 9vw;
+                      padding-top: 9vw;
+                    "
+                  />
+                  <img
+                    src="../designs/thank-you.gif"
+                    style="width: 38vw; margin: 0 auto; padding-top: 6vw;"
+                  />
+                  <!-- 		<img src = './graphics/opera-cake2.gif' id='first'/> -->
+                </div>
+              </div>
+            </td>
+            <td>
+              <h2 class="design-header">school of information ecards</h2>
+              <p>
+                With the switch to online education due to COVID-19, the
+                Berkeley School of Information had new graphic needs for ecards
+                to send out to alumni and students.
+              </p>
+              <p>
+                This set of ecards was created using Adobe After Effects and
+                Illustrator.
+              </p>
+              <a href="../portfolio.html"><h5>back to graphic design</h5></a>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <button
+                class="down-arrow-bounce bounce"
+                id="portfolio-down-bounce"
+              >
+                <img src="../graphics/arrow.png" />
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
 </html>
 
-<script src="../script.js"></script>
+<script src="../js/script.js"></script>
 <script src="../designs.js"></script>
