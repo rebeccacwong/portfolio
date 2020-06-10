@@ -1,0 +1,137 @@
+.header {
+	position: absolute;
+	top: 1.5vw;
+	right: 1.5vw;
+	display: inline;
+	padding: 0;
+}
+.secret td {
+	padding: 1vw;
+}
+.secret h1 {
+	transition: 0.5s ease;
+	margin: 0;
+	padding: 0;
+}
+.secret h1:hover {
+	cursor: pointer;
+	color: #2f5154;
+}
+
+/** SLIDESHOW **/
+.crop {
+	width: 40vh; /* width of container */
+    height: 40vh; /* height of container */
+    object-fit: cover;
+}
+.crop2 {
+	height: 2vw;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	top: 1vw;
+	left: 1.75vw;
+/*	left: 100%;*/
+	position: absolute;
+}
+.frame td, tr {
+	vertical-align: center;
+	white-space: nowrap;
+	display: inline-block;
+	table-layout: fixed;
+/*	overflow: hidden;*/
+}
+.overlay td, tr {
+	vertical-align: center;
+	white-space: nowrap;
+	display: inline-block;
+}
+.frame td:first-child, .overlay td:first-child {
+	margin-left: 3vw;
+}
+.frame td, .overlay td {
+	padding: 1vw;
+	border: 1px solid #68483c;
+	margin-right: 3vw;
+	min-width: 40vh;
+	max-width: 40vh;
+	max-height: 40vh;
+/*	max-height: 70vh;*/
+	table-layout: fixed;
+	font-family: 'lumiera_handwritingregular';
+	font-weight: lighter;
+	font-size: 5vh;
+	text-align: center;
+}
+.overlay td {
+	border: 1px solid transparent;
+}
+/*.overlay td {
+	padding: 1vw;
+/*	border: 1px solid #68483c;*/
+/*	margin-right: 3vw;
+	min-width: 25vw;
+	max-width: 25vw;
+	table-layout: fixed;
+	
+}*/
+.overlay {
+	top: 41.5vh;
+}
+.frame {
+/*	width: 100%;*/
+/*	border: 1px solid black;*/
+	border-collapse: separate;
+	table-layout: fixed;
+	height: inherit;
+	transition: 0.5s ease;
+}
+.overlay {
+	border-collapse: separate;
+	table-layout: fixed;
+	height: line-height;
+	transition: 0.5s ease;
+	position: absolute;
+}
+.frame img {
+	transition: 0.5s ease;
+}
+.frame tr:last-child td {
+	height: 4vh;
+	border-top: none;
+}
+.portfolio-slideshow {
+	width: 90%;
+	margin: 0 auto;
+	height: 85vh;
+	position: relative;
+	top: 20vh;
+/*	border: 1px solid #68483c;*/
+/*	background-color: #ecdcd8;*/
+/*	display: flex;
+	flex-direction: row;*/
+	transition: 1s ease;
+    align-items: center; 
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.right, .left {
+	background-color: #f4d6cb;
+	border-radius: 50%;
+	position: absolute;
+	top: 45%;
+	right: 2vw;
+	width: 4vw;
+	height: 4vw;
+	z-index: 5;
+	vertical-align: center;
+	transition: 0.5s;
+}
+.left {
+	transform: rotate(180deg);
+	left: 2vw;
+}
+.right:hover, .left:hover {
+	background-color: #2f5154;
+}

@@ -1,0 +1,171 @@
+.header {
+	position: absolute;
+	top: 1.5vw;
+	right: 1.5vw;
+	display: inline;
+	padding: 0;
+}
+.secret td {
+	padding: 1vw;
+}
+.secret h1 {
+	transition: 0.5s ease;
+	margin: 0;
+	padding: 0;
+}
+.secret h1:hover {
+	cursor: pointer;
+	color: #2f5154;
+}
+
+
+/* GENERAL */
+	p {
+		font-family: 'poppinslight';
+		font-size: 1vw;
+		
+	}
+	b {
+		font-family: 'poppinsbold';
+	}
+	em {
+		font-family: 'poppinsitalic';
+	}
+	.wrapper {
+		position: relative;
+		top: 9vw;
+		max-height: 50vw;
+		overflow-wrap: auto;
+		width: 80%;
+		margin: 0 auto;
+/*		border: 1px solid green;*/
+	}
+
+
+/** CUSTOM FONTS **/
+	@font-face {
+	    font-family: 'poppinslight_italic';
+	    src: url('./fonts/poppins-lightitalic-webfont.woff2') format('woff2'),
+	         url('./fonts/poppins-lightitalic-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+
+
+
+	@font-face {
+	    font-family: 'poppinsitalic';
+	    src: url('./fonts/poppins-italic-webfont.woff2') format('woff2'),
+	         url('./fonts/poppins-italic-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+
+
+
+	@font-face {
+	    font-family: 'poppinslight';
+	    src: url('./fonts/poppins-light-webfont.woff2') format('woff2'),
+	         url('./fonts/poppins-light-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+
+
+
+	@font-face {
+	    font-family: 'poppinsregular';
+	    src: url('./fonts/poppins-regular-webfont.woff2') format('woff2'),
+	         url('./fonts/poppins-regular-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+
+
+
+	@font-face {
+	    font-family: 'poppinsbold';
+	    src: url('./fonts/poppins-bold-webfont.woff2') format('woff2'),
+	         url('./fonts/poppins-bold-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+
+
+
+	@font-face {
+	    font-family: 'poppinsbold_italic';
+	    src: url('./fonts/poppins-bolditalic-webfont.woff2') format('woff2'),
+	         url('./fonts/poppins-bolditalic-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+
+
+
+	@font-face {
+	    font-family: 'questrialregular';
+	    src: url('.fonts/questrial-regular-webfont.woff2') format('woff2'),
+	         url('questrial-regular-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+
+/** GRAPHIC DESIGN */
+	.design-crop {
+		object-fit: cover;
+		width: 35vw;
+	}
+	.greensort{
+		padding-top: 7vw;
+		padding-bottom: 6vw;
+		width: 35vw;
+	}
+	.carousel-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		overflow-y: hidden;
+/*		max-height: vw;*/
+/*		border: 1px solid blue;*/
+	}
+/*	#garb-table .carousel-container {
+		height: 29vw;
+	}*/
+	.carousel-slide {
+		transform: none;
+		transition: 0.5s ease-in-out;
+	}
+	.carousel-slide img {
+		max-height: 40vw;
+		display: block;
+		margin: 0 auto;
+	}
+	#portfolio-down-bounce {
+		left: -45vw;
+		bottom: 9vw;
+		margin: 0 auto;
+		margin-top: 5vw;
+	}
+	.carousel td {
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+	}
+	.design-header {
+		margin-top: 10vw;
+	}
