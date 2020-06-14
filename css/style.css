@@ -376,12 +376,47 @@ button {
   left: 23vw;
 }
 .arrow-slide {
-  opacity: 0;
-  position: absolute;
+  position: relative;
   margin-top: 0.8vw;
   height: 1vw;
   vertical-align: center;
   transition: 0.75s ease;
+  animation: 3s ease-in-out 0s infinite arrowSlide;
+  /* animation-name: arrowSlide;
+  animation-delay: 2s;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: arrowSlide;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s; */
+}
+@keyframes arrowSlide {
+  0%,
+  50% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0.5em);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes arrowSlide {
+  0%,
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  80% {
+    -webkit-transform: translateX(0.5em);
+    transform: translateX(0.5em);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 #subsection-get-started {
   top: 20vw;

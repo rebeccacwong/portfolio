@@ -49,29 +49,29 @@ function toggleNav() {
 /** CALL TO ACTION ANIMATION **/
 var computed = 0;
 var callStarted = false;
-$(".call-to-action").hover(
-  function () {
-    if (!callStarted) {
-      callStarted = true;
-      var arrowSlide = this.children[0];
-      var rect = arrowSlide.getClientRects()[0];
-      var compStyles = window.getComputedStyle(arrowSlide);
-      var curr = compStyles
-        .getPropertyValue("left")
-        .substring(0, compStyles.getPropertyValue("left").length - 2);
-      computed = (100 / document.documentElement.clientWidth) * parseInt(curr);
-      $(this)
-        .children()
-        .animate({ left: computed + 3 + "vw", opacity: 1 }, 100);
-    }
-  },
-  function () {
-    $(this)
-      .children()
-      .animate({ left: computed + "vw", opacity: 0 }, 100);
-    callStarted = false;
-  }
-);
+// $(".call-to-action").hover(
+//   function () {
+//     if (!callStarted) {
+//       callStarted = true;
+//       var arrowSlide = this.children[0];
+//       var rect = arrowSlide.getClientRects()[0];
+//       var compStyles = window.getComputedStyle(arrowSlide);
+//       var curr = compStyles
+//         .getPropertyValue("left")
+//         .substring(0, compStyles.getPropertyValue("left").length - 2);
+//       computed = (100 / document.documentElement.clientWidth) * parseInt(curr);
+//       $(this)
+//         .children()
+//         .animate({ left: computed + 3 + "vw", opacity: 1 }, 100);
+//     }
+//   },
+//   function () {
+//     $(this)
+//       .children()
+//       .animate({ left: computed + "vw", opacity: 0 }, 100);
+//     callStarted = false;
+//   }
+// );
 
 /** VIEWPORT ANIMATION **/
 function isElementInViewport(elem) {
