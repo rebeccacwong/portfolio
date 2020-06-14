@@ -28,7 +28,6 @@ body {
   padding: 0px;
   max-width: 100%;
   overflow: hidden;
-  overflow-y: scroll;
   scroll-behavior: smooth;
   cursor: default;
 }
