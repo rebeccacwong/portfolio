@@ -18,28 +18,15 @@ const captions = $(".overlay td").toArray();
 const imgs = $(".frame img");
 var interval = setInterval(slide, 4000);
 
-// for (var i = 0; i < imgs.length; i++) {
-
-// 	// $(imgs[i]).hover(function() {
-// 	// 	console.log('hovered')
-// 	// 	clearInterval(interval);
-// 	// }, function() {
-// 	// 	interval = setInterval(3000);
-// 	// 	console.log('off')
-// 	// })
-// 	console.log(imgs[i])
-// 	$(imgs[i]).click(function() {
-// 		shrink();
-// 	})
-// }
-
 function slide() {
   slideCarousel(400, 1);
-  // $(".portfolio-slideshow").scrollLeft(pos + 150);
+}
+
+function pauseCarousel() {
+  clearInterval(interval);
 }
 
 function slideCarousel(amount, direction) {
-  clearInterval(interval);
   var html = "<td>" + frames[front].innerHTML + "</td>";
   var html2 = "<td></td>";
   var pos = $(".portfolio-slideshow").scrollLeft();
@@ -56,9 +43,6 @@ function slideCarousel(amount, direction) {
     );
   }
 
-  // $('table tr').find('td:eq(' + curr + '),th:eq(' + curr + ')').remove();
-  // $('table tr').find('td:eq(' + curr + '),th:eq(' + curr + ')').innerHTML = "";
-  // console.log($(".frame tr"));
   $(".frame tr")[0].innerHTML += html;
   $(".frame tr")[1].innerHTML += html2;
   $(".overlay tr")[0].innerHTML += "<td>" + captions[front].innerHTML + "</td>";
@@ -68,8 +52,26 @@ function slideCarousel(amount, direction) {
     shrink();
   });
   front = (front + 1) % Math.round(frames.length / 2);
-  interval = setInterval(slide, 4000);
 }
+
+// event listeners for carousel
+$(".right").click(function () {
+  pauseCarousel();
+  slideCarousel(400, 1);
+});
+
+$(".left").click(function () {
+  pauseCarousel();
+  slideCarousel(400, -1);
+});
+
+$(".right").hover(pauseCarousel, function () {
+  interval = setInterval(slide, 4000);
+});
+
+$(".left").hover(pauseCarousel, function () {
+  interval = setInterval(slide, 4000);
+});
 
 /** NAVIGATION ANIMATION **/
 const navButton = document.querySelector("#navbar-button");
