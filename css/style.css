@@ -141,8 +141,6 @@ button {
 /** SECTIONING **/
 .sections {
   height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
@@ -373,7 +371,6 @@ button {
 }
 .arrow-slide {
   position: relative;
-  margin-top: 0.8vw;
   height: 1vw;
   vertical-align: center;
   transition: 0.75s ease;
