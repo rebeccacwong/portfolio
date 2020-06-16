@@ -298,12 +298,7 @@ button {
 
 .rebecca {
   border-radius: 50%;
-<<<<<<< HEAD
-  background-image: url("portrait-vector.png");
-=======
-  background-image: url("./css/portrait-vector.png");
-
->>>>>>> 5e44b093ed53d03bb8a966f20c348bdffcd89f70
+  background-image: url("/css/portrait-vector.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
