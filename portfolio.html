@@ -1,77 +1,204 @@
 <!DOCTYPE html>
 <html>
-<meta id="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/portfolio-style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<meta charset = "UTF-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/portfolio-style.css" />
+  <meta charset="UTF-8" />
 
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="favicon/favicon-16x16.png"
+  />
 
-<title> Rebecca Wong • graphic design</title>
-<button id = 'navbar-button'> <img src = 'graphics/sidebar.png' /> </button>
+  <title>Rebecca Wong • graphic design</title>
+  <button id="navbar-button"><img src="graphics/sidebar.png" /></button>
 
-<div class = 'navbar'>
-	<img src = "graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
-	<div class = 'navbar-container'>
-		<h2><a href = "index.html"> about </a></h2>
-		<h2><a href = "portfolio.html"> graphic design</a></h2>
-<!-- 		<h2>web design</h2> -->
-		<h2><a href = "index.html#get-started">contact</a></h2>
-	</div>
-</div>
+  <div class="mynavbar">
+    <img src="graphics/x.png" id="navbar-x" onclick="toggleNav()" />
+    <div class="navbar-container">
+      <h2><a href="index.html"> about </a></h2>
+      <h2><a href="portfolio.html"> graphic design</a></h2>
+      <!-- 		<h2>web & product design</h2> -->
+      <h2><a href="index.html#get-started">contact</a></h2>
+    </div>
+  </div>
 
-<div class = 'header'>
-	<table class = 'secret'>
-		<tr>
-			<td><h1 style = "font-size: 5vh; margin: 0" onclick="openNav()">Rebecca Wong</h1></td>
-			<td><img src = "graphics/portrait.png" style = "width: 7vh" onclick="openNav()" /></td>
-		</tr>
-	</table>
-</div>
+  <div class="header">
+    <table class="secret">
+      <tr>
+        <td>
+          <h1 style="font-size: 5vh; margin: 0;" onclick="openNav()">
+            Rebecca Wong
+          </h1>
+        </td>
+        <td>
+          <img
+            src="graphics/portrait.png"
+            style="width: 7vh;"
+            onclick="openNav()"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
 
-<div class = "portfolio-slideshow">
-	<table class = "overlay">
-		<tr>
-			<td>preschool preview night</td>
-			<td>here for the dessert</td>
-			<td>greensort app</td>
-			<td>garb fall 2019 recruitment</td>
-			<td>garb issue 02</td>
-			<!-- <td>here for the dessert</td> -->
-			<td>uc berkeley big give</td>
-			<!-- <td>i school ecards</td> -->
-		</tr>
-	</table>
-	<table class = "frame">
-		<tr>
-			<td><a href = "design-subpages/preschool.html"><img src = "designs/preschool preview square blue.png" class = "crop" /></a></td>
-			<td><a href = "design-subpages/desserts.html"><img src = "designs/opera-cake2.gif" class = "crop"/></a></td>
-			<td><a href = "design-subpages/greensort.html"><img src = "designs/greensort-slide-deck/screens-reflect.jpeg" class = "crop" /></a></td>
-			<td><a href = "design-subpages/garb.html"><img src = "designs/fa19-animated-logo.gif" class = "crop" /></a></td>
-			<td><a href ="design-subpages/garbmag.html"><img src = "designs/mag.png" class = "crop" /></a></td>
-<!-- 			<td><a href = "design-subpages/desserts.html"><img src = "designs/wreath-cake.gif" class = "crop"/></a></td> -->
-			<td><a href = "design-subpages/biggive.html"><img src = "designs/big-give-international-gif.gif" class = "crop"/></a></td>
-			<!-- <td><a href = "design-subpages/ecards.html"><img src = "designs/new-job2.gif" /></a></td> -->
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
-</div>
+  <!--Carousel Wrapper-->
+  <div
+    id="multi-item-example"
+    class="carousel slide carousel-multi-item"
+    data-ride="carousel"
+  >
+    <!--Slides-->
+    <div
+      class="container-fluid p-5"
+      style="margin-top: 10em;"
+    >
+      <div class="carousel-inner container" role="listbox">
+        <!--First slide-->
+        <div class="item active">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="designs/opera-cake2.gif"
+                  alt="here for the dessert"
+                />
+                <div class="card-body">
+                  <h1 class="card-title">here for the dessert</h1>
+                </div>
+              </div>
+            </div>
 
-<button class = "right"><img src = "graphics/right-arrow.png" class = "crop2" /></div>
-<button class = "left"><img src = "graphics/right-arrow.png" class = "crop2" /></div>
+            <div class="col-md-4 d-none d-md-block">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="designs/screens-reflect-crop.jpg"
+                  alt="greensort"
+                />
+                <div class="card-body">
+                  <h1 class="card-title">greensort</h4>
+                </div>
+              </div>
+            </div>
 
-<script src = "js/portfolio.js"></script>
+            <div class="col-md-4 d-none d-md-block">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="designs/preschool preview square blue.png"
+                  alt="preschool preview night"
+                />
+                <div class="card-body">
+                  <h1 class="card-title">preschool preview night</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.First slide-->
 
+        <!--Second slide-->
+        <div class="item">
+          <div class="row">
+            <div class="col-md-4 d-none d-md-block">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="designs/mag copy.png"
+                  alt="garb issue 02"
+                />
+                <div class="card-body">
+                  <h1 class="card-title">garb issue 02</h1>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-4 d-none d-md-block">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="designs/fa19-animated-logo.gif"
+                  alt="garb fa19 recruitment"
+                />
+                <div class="card-body">
+                  <h1 class="card-title">garb fa19 recruitment</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 d-none d-md-block">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="designs/big-give-crop.jpg"
+                  alt="uc berkeley big give"
+                />
+                <div class="card-body">
+                  <h1 class="card-title">uc berkeley big give</h1>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--/.Second slide-->
+
+      </div>
+      <!--/.Slides-->
+
+      <!--Controls-->
+      <a
+        class="carousel-control-prev control"
+        href="#multi-item-example"
+        role="button"
+        data-slide="prev"
+      >
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a
+        class="carousel-control-next control"
+        href="#multi-item-example"
+        role="button"
+        data-slide="next"
+      >
+        <i class="fa fa-angle-right"></i>
+      </a>
+      <!--/.Controls-->
+    </div>
+  </div>
+  <!--/.Carousel Wrapper-->
 </html>
+
+<script src="js/script.js"></script>

@@ -1,80 +1,129 @@
 <!DOCTYPE html>
 <html>
-<meta id="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../css/designs.css">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<meta charset = "UTF-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="../css/designs.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
+  <meta charset="UTF-8" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="../favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="../favicon/favicon-16x16.png"
+  />
 
-<title> Rebecca Wong • graphic design</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-<button id = 'navbar-button'> <img src = '../graphics/sidebar.png' /> </button>
+  <title>Rebecca Wong • graphic design</title>
 
-<div class = 'navbar'>
-	<img src = "../graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
-	<div class = 'navbar-container'>
-		<h2><a href = "../index.html"> about </a></h2>
-		<h2><a href = "../portfolio.html"> graphic design</a></h2>
-<!-- 		<h2>web design</h2> -->
-		<h2><a href = "../index.html#get-started">contact</a></h2>
-	</div>
-</div>
+  <button id="navbar-button"><img src="../graphics/sidebar.png" /></button>
 
-<div class = 'header'>
-	<table class = 'secret'>
-		<tr>
-			<td><h1 style = "font-size: 5vh; margin: 0" onclick="toggleNav()">Rebecca Wong</h1></td>
-			<td><img src = "../graphics/portrait.png" style = "width: 7vh" onclick="toggleNav()" /></td>
-		</tr>
-	</table>
-</div>
+  <div class="mynavbar">
+    <img src="../graphics/x.png" id="navbar-x" onclick="toggleNav()" />
+    <div class="navbar-container">
+      <h2><a href="../index.html"> about </a></h2>
+      <h2><a href="../portfolio.html"> graphic design</a></h2>
+      <!-- 		<h2>web design</h2> -->
+      <h2><a href="../index.html#get-started">contact</a></h2>
+    </div>
+  </div>
 
-<body>
-	<section id = 'biggive'>
-		<div class = 'wrapper' style = "width: 88%">
-			<table  class = 'carousel' id = 'biggive-table'>
-				<tr>
-					<td width = "50%"> 
-						<div class = 'carousel-container' style = "background-color: #eeeeee;" >
-							<div class = 'carousel-slide' id = 'slide'>
-								<img src = "../designs/greensort-slide-deck/slide deck.001.jpeg" class = "greensort">
-								<img src = "../designs/greensort-slide-deck/slide deck.002.jpeg" class = "greensort">
-								<img src = "../designs/greensort-slide-deck/slide deck.003.jpeg" class = "greensort">
-								<img src = "../designs/greensort-slide-deck/slide deck.004.jpeg" class = "greensort">
-								<img src = "../designs/greensort-slide-deck/slide deck.005.jpeg" class = "greensort">
-								<img src = "../designs/greensort-slide-deck/slide deck.006.jpeg" class = "greensort">
-								<img src = "../designs/greensort-slide-deck/slide deck.007.jpeg" class = "greensort">
-								<img src = "../designs/greensort-slide-deck/slide deck.009.jpeg" class = "greensort">
-							</div>
-						</div>
-					</td>
-					<td style = "padding-left: 2vw">
-						<h2 class = "design-header">greensort app slide deck</h2>
-						<p>I created this app design for Design Innovation 21: Visual Communication and Sketching.</p></a>
-						<p>The slide deck documents the big idea of the app functionalities and some mockup user interfaces.</p>
-						<a href = "../portfolio.html"><h5>back to graphic design</h5></a>
-					</td>
-				</tr>
-				<tr>
-						<td width = '50%'>
-							<button class = 'down-arrow-bounce bounce' id = "portfolio-down-bounce">
-							<img src = "../graphics/arrow.png">
-						</button>
-						</td>
-					</tr>
-			</table>
-		</div>
-	</section>
+  <div class="header">
+    <table class="secret">
+      <tr>
+        <td>
+          <h1 style="font-size: 5vh; margin: 0;" onclick="toggleNav()">
+            Rebecca Wong
+          </h1>
+        </td>
+        <td>
+          <img
+            src="../graphics/portrait.png"
+            style="width: 7vh;"
+            onclick="toggleNav()"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
 
-</body>
+  <body>
+    <div class="container">
+      <div class="row mt-5 pt-5">
+        <div class="col-lg">
+          <img src="../designs/greensort-slide-deck/screens-reflect.jpeg" />
+          <p class="caption">mockup screens</p>
 
+          <img src="../designs/greensort-slide-deck/screens.png" />
+          <p class="caption">mockup screens</p>
+
+          <img src="../designs/greensort concept sketch.jpg" />
+          <p class="caption">concept sketch</p>
+          <iframe
+            src="https://player.vimeo.com/video/429457159"
+            width="640"
+            height="370"
+            frameborder="3"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+          <p class="caption">website design demo</p>
+
+          <img src="../designs/greensort long.png" />
+        </div>
+
+        <div class="col-lg px-sm-5">
+          <h2 class="design-header">greensort app design</h2>
+          <p>
+            I originally created this app design for Design Innovation 21:
+            Visual Communication and Sketching. I created the app mockup with
+            Figma:
+            <b
+              >the app prototype is viewable
+              <a
+                href="https://www.figma.com/proto/Q59ZDGg4s19DzE1kIP4FyO/greensort?node-id=50%3A41&scaling=scale-down"
+              >
+                here.</a
+              ></b
+            >
+          </p>
+          <p>
+            I later extended the brand and created a mockup brand website for
+            the product and coded it.
+            <b
+              >The brand website is viewable
+              <a href="https://rebeccacwong.github.io/greensort/">here.</a></b
+            >
+          </p>
+          <p>
+            A majority of the vectors in the interface and the website are from
+            FreePik, but I did heavily modify a lot of them. I created all the
+            animations in After Effects using base vectors from FreePik.
+          </p>
+          <a href="../portfolio.html"><h5>back to graphic design</h5></a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 
 <script src="../js/script.js"></script>
-<script src="../js/designs.js"></script>

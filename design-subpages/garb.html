@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <meta id="viewport" content="width=device-width, initial-scale=1.0">
+<link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
 <link rel="stylesheet" type="text/css" href="../css/designs.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <meta charset = "UTF-8">
@@ -15,7 +21,7 @@
 
 <button id = 'navbar-button'> <img src = '../graphics/sidebar.png' /> </button>
 
-<div class = 'navbar'>
+<div class = 'mynavbar'>
 	<img src = "../graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
 	<div class = 'navbar-container'>
 		<h2><a href = "../index.html"> about </a></h2>
@@ -35,43 +41,29 @@
 </div>
 
 <body>
-	<section id = 'garb'>
-		<div class = 'wrapper' style = "width: 88%">
-			<table class = 'carousel'>
-				<tr>
-					<td width = "50%"> 
-						<div class = 'carousel-container'>
-							<div class = 'carousel-slide' id = 'slide'>
-								<!-- <img src = "./graphics/s'mores-cake-layers.gif" id='last'/> -->
-								<img src = '../designs/fa19 flyer front-01.png' style = "margin-top: 10vw; margin-bottom: 10vw;" class = "design-crop" />
-								<img src = '../designs/fa19 flyer back-01.png' style = "margin-top: 10vw; margin-bottom: 10vw;" class ="design-crop"/>
-								<video width="100%" style = "margin-top: 5vw; margin-bottom: 9vw" autoplay loop muted>
-								  <source src="../designs/fa19 fb cover photo.mp4" type="video/mp4">
-								  <source src="../designs/fa19 fb cover photo.ogg" type="video/ogg">
-								  	Your browser does not support the video tag.
-								</video>
-								<img src = "../designs/fa19-animated-logo.gif" style = "height: 25vw; margin: 0 auto;"/>
-							</div>
-						</div>
-					</td>
-					<td>
-						<h2 class = "design-header">garb fall 2019 recruitment </h2>
-						<p>I designed the following flyer, facebook cover photo, logo, and Facebook profile photo overlay as promotional material for <a href = "http://berkeleygarb.com">Garb's </a>fall recruitment.</p>
-						<p>I created a central theme around 90s computers to tie together all of the promotional material. All of these works were created using Adobe Illustrator and After Effects.</p>
-						<br/>
-						<a href = "../portfolio.html"><h5>back to graphic design</h5></button>
-					</td>
-				</tr>
-				<tr>
-					<td width = '50%'>
-						<button class = 'down-arrow-bounce bounce' id = "portfolio-down-bounce">
-						<img src = "../graphics/arrow.png">
-					</button>
-					</td>
-				</tr>
-			</table>
+	<div class="container">
+		<div class="row mt-5 pt-5">
+			<div class="col-lg">
+				<img src = '../designs/fa19 flyer front-01.png' class = "design-crop" />
+				<p class="caption">front of flyer</p>
+				<img src = '../designs/fa19 flyer back-01.png' class ="design-crop"/>
+				<p class="caption">back of flyer</p>
+				<video width="100%" autoplay loop muted style="border: 5px solid #eeeeee;">
+					<source src="../designs/fa19 fb cover photo.mp4" type="video/mp4">
+					<source src="../designs/fa19 fb cover photo.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+				<p class="caption">facebook cover photo</p>
+				<img src = "../designs/fa19-animated-logo.gif" />
+			</div>
+			<div class="col-lg px-sm-5">
+				<h2 class = "design-header">garb fall 2019 recruitment </h2>
+				<p>I designed the following flyer, facebook cover photo, and logo as promotional material for <a href = "http://berkeleygarb.com">Garb's </a>fall recruitment.</p>
+				<p>I created a central theme around 90s computers to tie together all of the promotional material. All of these works were created using Adobe Illustrator and After Effects.</p>
+				<a href = "../portfolio.html"><h5>back to graphic design</h5></button>
+			</div>
 		</div>
-	</section>
+	</div>
 
 </body>
 

@@ -7,7 +7,7 @@ function main() {
   $(".portfolio-slideshow").scrollLeft(400);
 }
 function toggleNav() {
-  $(".navbar").slideToggle();
+  $(".mynavbar").slideToggle();
 }
 
 /** PORTFOLIO CAROUSEL **/
@@ -55,21 +55,21 @@ function slideCarousel(amount, direction) {
 }
 
 // event listeners for carousel
-$(".right").click(function () {
+$(".right-btn").click(function () {
   pauseCarousel();
   slideCarousel(400, 1);
 });
 
-$(".left").click(function () {
+$(".left-btn").click(function () {
   pauseCarousel();
   slideCarousel(400, -1);
 });
 
-$(".right").hover(pauseCarousel, function () {
+$(".right-btn").hover(pauseCarousel, function () {
   interval = setInterval(slide, 4000);
 });
 
-$(".left").hover(pauseCarousel, function () {
+$(".left-btn").hover(pauseCarousel, function () {
   interval = setInterval(slide, 4000);
 });
 
@@ -78,5 +78,5 @@ const navButton = document.querySelector("#navbar-button");
 navButton.addEventListener("click", openNav);
 
 function openNav() {
-  $(".navbar").slideToggle();
+  $(".mynavbar").slideToggle();
 }

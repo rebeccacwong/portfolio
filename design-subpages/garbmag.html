@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <meta id="viewport" content="width=device-width, initial-scale=1.0">
+<link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
 <link rel="stylesheet" type="text/css" href="../css/designs.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <meta charset = "UTF-8">
@@ -16,7 +22,7 @@
 
 <button id = 'navbar-button'> <img src = '../graphics/sidebar.png' /> </button>
 
-<div class = 'navbar'>
+<div class = 'mynavbar'>
 	<img src = "../graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
 	<div class = 'navbar-container'>
 		<h2><a href = "../index.html"> about </a></h2>
@@ -36,38 +42,23 @@
 </div>
 
 <body>
-	<section id = 'garbmag'>
-		<div class = 'wrapper' style = "width: 88%">
-			<table  class = 'carousel' id = 'garb-mag-table'>
-				<tr>
-					<td width = "50%"> 
-						<div class = 'carousel-container' style = "background-color: #f4ebe9;" >
-							<div class = 'carousel-slide' id = 'slide'>
-								<img src = "../designs/mag1.png" class = "design-crop" style="margin-top: 8vw; margin-bottom: 8vw" />
-								<img src = "../designs/mag.png" class = "design-crop" style="margin-top: 10vw"/>
-							</div>
-						</div>
-					</td>
-					<td style = "padding-left: 2vw">
-						<h2 class = "design-header">garb issue 02</h2>
-						<p>I created these spreads for the berkeleygarb.com online magazine.</p></a>
-						<p>As the design team manager, I led the creative direction of the online magazine and oversaw designer layout design of the magazine to ensure a cohesive design.</p>
-						<a href = "../portfolio.html"><h5>back to graphic design</h5></a>
-					</td>
-				</tr>
-				<tr>
-						<td width = '50%'>
-							<button class = 'down-arrow-bounce bounce' id = "portfolio-down-bounce">
-							<img src = "../graphics/arrow.png">
-						</button>
-						</td>
-					</tr>
-			</table>
+	<div class="container">
+		<div class="row mt-5 pt-5">
+			<div class="col-lg designs px-sm-5 py-sm-5" style="background-color: #eeeeee;">
+				<img src = "../designs/mag1.png" class = "design-crop" />
+				<img src = "../designs/mag.png" class = "design-crop" />
+			</div>
+			<div class="col-lg px-sm-5">
+				<h2 class = "design-header">garb issue 02</h2>
+				<p>I created these spreads for the <a href="http://berkeleygarb.com">berkeleygarb.com</a> online magazine.</p></a>
+				<p>As the design team manager, I led the creative direction of the online magazine and oversaw designer layout design of the magazine to ensure a cohesive design.</p>
+				<a href = "../portfolio.html"><h5>back to graphic design</h5></a>
+			</div>
 		</div>
-	</section>
+	</div>
 
 </body>
 
 </html>
 
-<script src="../js/designs.js"></script>
+<script src="../js/script.js"></script>

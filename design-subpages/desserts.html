@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html>
-<meta id="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../css/designs.css">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<meta charset = "UTF-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="../css/designs.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <meta charset="UTF-8" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="../favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="../favicon/favicon-16x16.png"
+  />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-<title> Rebecca Wong • graphic design</title>
+  <title>Rebecca Wong • graphic design</title>
 
-<button id = 'navbar-button'> <img src = '../graphics/sidebar.png' /> </button>
+  <button id="navbar-button"><img src="../graphics/sidebar.png" /></button>
 
-<div class = 'navbar'>
-	<img src = "../graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
-	<div class = 'navbar-container'>
-		<h2><a href = "../index.html"> about </a></h2>
-		<h2><a href = "../portfolio.html"> graphic design</a></h2>
-<!-- 		<h2>web design</h2> -->
-		<h2><a href = "../index.html#get-started">contact</a></h2>
-	</div>
-</div>
+  <div class="mynavbar">
+    <img src="../graphics/x.png" id="navbar-x" onclick="toggleNav()" />
+    <div class="navbar-container">
+      <h2><a href="../index.html"> about </a></h2>
+      <h2><a href="../portfolio.html"> graphic design</a></h2>
+      <!-- 		<h2>web design</h2> -->
+      <h2><a href="../index.html#get-started">contact</a></h2>
+    </div>
+  </div>
 
-<div class = 'header'>
-	<table class = 'secret'>
-		<tr>
-			<td><h1 style = "font-size: 5vh; margin: 0" onclick="toggleNav()">Rebecca Wong</h1></td>
-			<td><img src = "../graphics/portrait.png" style = "width: 7vh" onclick="toggleNav()" /></td>
-		</tr>
-	</table>
-</div>
+  <div class="header">
+    <table class="secret">
+      <tr>
+        <td>
+          <h1 style="font-size: 5vh; margin: 0;" onclick="toggleNav()">
+            Rebecca Wong
+          </h1>
+        </td>
+        <td>
+          <img
+            src="../graphics/portrait.png"
+            style="width: 7vh;"
+            onclick="toggleNav()"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
 
-<body>
-	<section id = 'desserts'>
+  <body>
+    <div class="container">
+      <div class="row mt-5 pt-5">
+        <div class="col-lg">
+          <img src="../designs/opera-cake2.gif" />
+          <img src="../designs/wreath-cake.gif" />
+          <img src="../designs/s'mores-cake-layers.gif" />
+        </div>
+
+        <div class="col-lg px-sm-5">
+          <h2 class="design-header">here for the dessert</h2>
+          <p>
+            I created these illustrations using Adobe Illustrator and Adobe Draw
+            for my personal baking blog called
+            <a href="http://hereforthedessert.com"> Here for the Dessert.</a>
+          </p>
+          <a href="../portfolio.html"><h5>view other designs</h5></a>
+        </div>
+      </div>
+    </div>
+    <!-- <section id = 'desserts'>
 		<div class = 'wrapper' style = "width: 88%">
 			<table class = 'carousel' id = 'desserts-table'>
 				<tr>
 					<td width = "50%"> 
 						<div class = 'carousel-container'>
 							<div class = 'carousel-slide' id = 'slide'>
-								<!-- <img src = "./graphics/s'mores-cake-layers.gif" id='last'/> -->
-								<img src = '../designs/opera-cake2.gif' />
-								<img src = '../designs/wreath-cake.gif' />
-								<img src = "../designs/s'mores-cake-layers.gif"/>
-						<!-- 		<img src = './graphics/opera-cake2.gif' id='first'/> -->
-							</div>
+								<img src = "./graphics/s'mores-cake-layers.gif" id='last'/> -->
+    <!-- <img src="../designs/opera-cake2.gif" />
+    <img src="../designs/wreath-cake.gif" />
+    <img src="../designs/s'mores-cake-layers.gif" /> -->
+    <!-- 		<img src = './graphics/opera-cake2.gif' id='first'/> -->
+    <!-- </div>
 						</div>
 					</td>
 					<td>
@@ -65,10 +114,8 @@
 				</tr>
 			</table>
 		</div>
-	</section>
-
-</body>
-
+	</section>  -->
+  </body>
 </html>
 
 <script src="../js/script.js"></script>

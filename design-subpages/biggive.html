@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <meta id="viewport" content="width=device-width, initial-scale=1.0">
+<link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
 <link rel="stylesheet" type="text/css" href="../css/designs.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <meta charset = "UTF-8">
@@ -16,7 +22,7 @@
 
 <button id = 'navbar-button'> <img src = '../graphics/sidebar.png' /> </button>
 
-<div class = 'navbar'>
+<div class = 'mynavbar'>
 	<img src = "../graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
 	<div class = 'navbar-container'>
 		<h2><a href = "../index.html"> about </a></h2>
@@ -36,37 +42,25 @@
 </div>
 
 <body>
-	<section id = 'biggive'>
-		<div class = 'wrapper' style = "width: 88%">
-			<table  class = 'carousel' id = 'biggive-table'>
-				<tr>
-					<td width = "50%"> 
-						<div class = 'carousel-container'>
-							<div class = 'carousel-slide' id = 'slide'>
-								<img src = "../designs/i heart cal twitter-01.jpg" class = "design-crop" style="margin-top: 12vw; margin-bottom: 12vw"/>
-								<img src = "../designs/big-give-international-gif.gif" class = "design-crop" style="margin-top: 12.5vw; margin-bottom: 12.5vw" />
-								<img src = "../designs/baby big give twitter-01.jpg" class = "design-crop" style="margin-top: 13vw; margin-bottom: 13vw"/>
-								<img src = "../designs/countdown.gif" class = "design-crop" style="margin-top: 13.5vw"/>
-							</div>
-						</div>
-					</td>
-					<td>
-						<h2 class = "design-header">uc berkeley big give </h2>
-						<p>These Twitter graphics were created to publicize the UC Berkeley Big Give campaign. </p></a>
-						<p>In my role as a Communications Intern at the UC Berkeley School of Information, I specialize as the design lead within the digital communications team by creating external graphics to publicize the school as well as internal communications material.</p>
-						<a href = "../portfolio.html"><h5>back to graphic design</h5></a>
-					</td>
-				</tr>
-				<tr>
-						<td width = '50%'>
-							<button class = 'down-arrow-bounce bounce' id = "portfolio-down-bounce">
-							<img src = "../graphics/arrow.png">
-						</button>
-						</td>
-					</tr>
-			</table>
+
+	<div class="container">
+		<div class="row mt-5 pt-5">
+			<div class="col-lg designs px-sm-5 py-sm-5">
+				<img src = "../designs/i heart cal twitter-01.jpg" class = "design-crop" />
+				<img src = "../designs/big-give-international-gif.gif" class = "design-crop"  />
+				<img src = "../designs/baby big give twitter-01.jpg" class = "design-crop" />
+				<img src = "../designs/countdown.gif" class = "design-crop" />
+			</div>
+			<div class="col-lg px-sm-5">
+				<h2 class = "design-header">uc berkeley big give </h2>
+				<p>These Twitter graphics were created to publicize the UC Berkeley Big Give campaign. </p></a>
+				<p>In my role as a Communications Intern at the UC Berkeley School of Information, I specialize as the design lead within the digital communications team by creating external graphics to publicize the school as well as internal communications material.</p>
+				<a href = "../portfolio.html"><h5>back to graphic design</h5></a>
+			</div>
 		</div>
-	</section>
+	</div>
+
+	
 
 </body>
 

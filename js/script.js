@@ -43,7 +43,7 @@ navButton.addEventListener("click", function () {
 });
 
 function toggleNav() {
-  $(".navbar").slideToggle();
+  $(".mynavbar").slideToggle();
 }
 
 /** CALL TO ACTION ANIMATION **/
