@@ -378,14 +378,6 @@ button {
   vertical-align: center;
   transition: 0.75s ease;
   animation: 3s ease-in-out 0s infinite arrowSlide;
-  /* animation-name: arrowSlide;
-  animation-delay: 2s;
-  animation-duration: 0.4s;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: arrowSlide;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 2s; */
 }
 @keyframes arrowSlide {
   0%,
@@ -450,4 +442,7 @@ button {
 .designs img {
   margin-top: 2em;
   margin-bottom: 2em;
+}
+.mt-heavy {
+  margin-top: 10em;
 }

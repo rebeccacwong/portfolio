@@ -1,0 +1,39 @@
+.slider {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #f4d6cb;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+.carousel-center {
+  height: 38em;
+}
+.carousel-center div > img {
+  height: 100%;
+}
+.carousel-center div h3 {
+  text-align: center;
+}
