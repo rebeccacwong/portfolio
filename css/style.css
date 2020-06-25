@@ -116,7 +116,10 @@ button {
 }
 .navbar-container h2 {
   font-size: 4vw;
-  margin: 1em;
+  margin: 0.5em;
+}
+.navbar-container h2:first-child {
+  margin-top: 2em;
 }
 #navbar-button,
 #navbar-x {
@@ -128,7 +131,7 @@ button {
   cursor: pointer;
 }
 .navbar-container {
-  padding: 10vw;
+  padding: 5vw;
   object-position: center;
 }
 #navbar-x {
