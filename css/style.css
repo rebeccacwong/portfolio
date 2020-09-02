@@ -76,7 +76,6 @@ a:hover {
 .overlay-text {
   position: absolute;
   z-index: 10;
-  transition: 0.5s ease;
   display: show;
 }
 img {
@@ -138,7 +137,7 @@ button {
   position: absolute;
   width: 2vw;
   top: 2vw;
-  right: 2vw;
+  right: 4vw;
 }
 
 /** SECTIONING **/
@@ -167,7 +166,7 @@ button {
 }
 .down-arrow,
 .up-arrow {
-  right: 3vw;
+  right: 4vw;
   display: block;
   width: 4vw;
   margin: 0 auto;
@@ -290,13 +289,13 @@ button {
   border-radius: 50%;
   background-color: #f4d6cb;
   background-size: 100%;
-  width: 36vw;
-  height: 36vw;
+  width: 33vw;
+  height: 33vw;
   overflow: hidden;
   position: relative;
-  top: 10vw;
+  top: 12vw;
   float: right;
-  right: 15vw;
+  right: 18vw;
 }
 
 .rebecca {
@@ -307,8 +306,8 @@ button {
   background-size: 100%;
   background-attachment: relative;
   object-fit: scale-down;
-  width: 36vw;
-  height: 36vw;
+  width: 33vw;
+  height: 33vw;
   position: fixed;
   z-index: 5;
 }
@@ -319,6 +318,13 @@ button {
   background-color: #3b4c66;
   width: 43vw;
   height: 35vw;
+}
+.whole-container:last-child {
+  min-height: 100vh;
+  max-height: 150vh;
+}
+.secret img {
+  cursor: pointer;
 }
 #cs-sect {
   background-color: #ecdcd8;
@@ -341,25 +347,56 @@ button {
 }
 #design-text {
   position: relative;
-  top: 8vw;
-  left: 20vw;
+  margin: 0 auto;
   width: 35vw;
   z-index: 10;
+}
+#tooltip-graphic {
+  background-size: contain;
+  background-image: url("../graphics/toolkit.png");
+  width: 20vw;
+  height: 30vw;
+  position: absolute;
+  top: 15vh;
+  left: 8%;
+  background-repeat: no-repeat;
+}
+#scrollbar-graphic {
+  background-size: contain;
+  background-image: url("../graphics/scrollbar.png");
+  right: -0.1%;
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 3vw;
+}
+#window-graphic {
+  background-size: cover;
+  background-image: url("../graphics/window.png");
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 40vw;
+  overflow: hidden;
+  position: absolute;
+  top: 10vw;
+  float: right;
+  right: 14%;
 }
 #bake-sect {
   background-color: #ecdcd8;
   background-image: url("../graphics/kitchen-04.png");
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: left;
   background-size: 94% 96%;
   background-attachment: relative;
   object-fit: scale-down;
 }
 #graphic-design-sect {
-  background-image: url("../graphics/graphics.png");
+  background-image: url("../graphics/grid.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: relative;
   object-fit: scale-down;
 }
@@ -445,4 +482,8 @@ button {
 }
 .mt-heavy {
   margin-top: 10em;
+}
+
+/** TABLETS */
+@media only screen and (max-width: 768px) {
 }

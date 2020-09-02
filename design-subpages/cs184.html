@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="../css/designs.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <meta charset="UTF-8" />
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="../favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="../favicon/favicon-16x16.png"
+  />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <title>Rebecca Wong • programming</title>
+
+  <button id="navbar-button"><img src="../graphics/sidebar.png" /></button>
+
+  <div class="mynavbar">
+    <img src="../graphics/x.png" id="navbar-x" onclick="toggleNav()" />
+    <div class="navbar-container">
+      <h2><a href="../index.html"> about </a></h2>
+      <h2><a href="../portfolio.html">visual design</a></h2>
+      <h2><a href="../programming.html">programming</a></h2>
+      <h2><a href="../index.html#get-started">contact</a></h2>
+    </div>
+  </div>
+
+  <div class="header">
+    <table class="secret">
+      <tr>
+        <td>
+          <h1
+            style="font-size: 5vh; margin: 0"
+            onclick="location.href='../index.html'"
+          >
+            Rebecca Wong
+          </h1>
+        </td>
+        <td>
+          <img
+            src="../graphics/portrait.png"
+            style="width: 7vh"
+            onclick="location.href='../index.html'"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <body>
+    <div class="container">
+      <div class="row mt-5 pt-5">
+        <div class="col-lg pt-5">
+          <iframe
+            src="https://player.vimeo.com/video/447486245"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            class="shadow"
+          ></iframe>
+          <p class="caption">brief project explanation</p>
+          <iframe
+            src="https://player.vimeo.com/video/447258252"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            class="shadow"
+          ></iframe>
+          <p class="caption">fish feeding feature</p>
+        </div>
+
+        <div class="col-lg px-sm-5">
+          <h2 class="design-header">school of fish simulation</h2>
+          <p>
+            As my final project for CS184: Computer Graphics and Imaging, I
+            chose to implement a flocking simulation by modeling a school of
+            fish.
+          </p>
+          <p>
+            Along with basic flocking behavior, I also made the fish able to
+            swim towards food placed in the GUI and made them able to detect and
+            avoid obstacles.
+          </p>
+          <p>
+            <a
+              href="https://rebeccacwong.github.io/cs184-final-project/"
+              target="_blank"
+              >Read a detailed overview of the project here</a
+            >
+          </p>
+          <!-- <a href="../portfolio.html"><h5>view more designs</h5></a> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="../js/script.js"></script>
