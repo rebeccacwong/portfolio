@@ -86,13 +86,12 @@ h2 {
 h4 {
   font-family: 'Lora';
   color: #3B4862;
-  font-size: 1.6vw;
+  font-size: 1.5vw;
 }
 h5 {
-  font-family: "lumiera_handwritingregular";
-  font-weight: lighter;
-  font-size: 2vw;
-  margin-top: 4vh;
+  font-family: 'Lora';
+  color: #3B4862;
+  font-size: 1.2vw;
 }
 h1 {
   font-family: "lumiera_handwritingregular";
@@ -129,7 +128,7 @@ button {
 }
 
 /** NAVIGATION **/
-.navbar 
+.mynavbar 
 {
   height: 9vh;
   width: 100%;
@@ -141,6 +140,9 @@ button {
   align-items: center;
   position: fixed;
   z-index: 100;
+  justify-content: space-between;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
 }
 .nav-option
 {
@@ -224,10 +226,11 @@ button {
   padding-left: 0.8vw;
   padding-right: 0.8vw;
   text-align: center;
-  display: inline-block;
+  display: flex;
   position: relative;
   z-index: 10;
   margin-top: 1vw;
+  align-items: center;
 }
 .view-projects-button:hover
 {
@@ -338,9 +341,9 @@ button {
 }
 #hello-graphic {
   position: relative;
-  top: 9vw;
-  left: 15vw;
-  width: 40vw;
+  top: 16vw;
+  left: 19vw;
+  width: 32vw;
   z-index: 10;
 }
 .pink-circle {
