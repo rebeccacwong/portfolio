@@ -37,10 +37,10 @@ $(".down-arrow-bounce").hover(
 );
 
 /** NAVIGATION ANIMATION **/
-const navButton = document.querySelector("#navbar-button");
-navButton.addEventListener("click", function () {
-  toggleNav();
-});
+// const navButton = document.querySelector("#navbar-button");
+// navButton.addEventListener("click", function () {
+//   toggleNav();
+// });
 
 function toggleNav() {
   $(".mynavbar").slideToggle();
@@ -106,6 +106,7 @@ var laptopAnimationData = {
 };
 
 if (typeof lottie !== "undefined") {
+  console.log("Starting lottie animation for laptop.");
   var laptopAnimation = lottie.loadAnimation(laptopAnimationData);
 }
 
