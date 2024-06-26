@@ -19,9 +19,9 @@
 
 <title> Rebecca Wong </title>
 
-<button id = 'navbar-button'> <img src = 'graphics/sidebar.png' /> </button>
+<!-- <button id = 'navbar-button'> <img src = 'graphics/sidebar.png' /> </button> -->
 
-<div class = 'mynavbar'>
+<!-- <div class = 'mynavbar'>
 	<img src = "graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
 	<div class = 'navbar-container'>
 		<h2><a href = "index.html"> about </a></h2>
@@ -30,6 +30,32 @@
 		<h2><a href="product.html">product design</a></h2>
 		<h2><a href = "#get-started" onclick = "setTimeout(toggleNav, 500);">contact</a></h2>
 	</div>
+</div> -->
+
+<div class="navbar">
+	<table class="secret ml-0">
+		<tr>
+		<td>
+			<img
+				src="graphics/portrait.png"
+				style="width: 6vh"
+				onclick="location.href='index.html'"
+			/>
+			</td>
+		  <td>
+			<h1 style="font-size: 4.2vh; margin: 0; color: white" onclick="location.href='index.html'">
+			  Rebecca Wong
+			</h1>
+		  </td>
+		</tr>
+	  </table>
+	  <table class="secret mr-0">
+		<tr>
+			<td><h4 class="nav-option">programming</h4></td>
+			<td><h4 class="nav-option">visual design</h4></td>
+			<td><h4 class="nav-option">product design</h4></td>
+		</tr>
+	  </table>
 </div>
 
 <div class = "sections">
@@ -41,12 +67,15 @@
 
 	<div id = "cs-sect" class = "whole-container" >
 		<canvas id = "binary-rain"></canvas>
-		<h2 class = "overlay-text" style = "left: 15vw; top: 10vw; text-align: right; font-size: 4.5vw; color: #68483c;">i'm a <br/>software <br/>engineer</h2>
-		<h3 class = "overlay-text" style ="bottom: 4em; right: 14.7em">
-			<a href="programming.html">
-				view some of my projects
-				<img src = 'graphics/thin arrow.png' class = 'arrow-slide'/>
-			</a>
+		<div class="title-container">
+			<h3>I'm a</h3>
+			<h2>Software Engineer</h2>
+			<button class="view-projects-button">
+				<h4>See my projects</h4>
+			</button>
+			<h3 class = "overlay-text" style ="bottom: 4em; right: 14.7em">
+		</div>
+
 		</h1>
 		<button class = "up-arrow"><a href = "#hello"><img src = "graphics/arrow.png" /></a></button>
 		<button class = "down-arrow"><a href = "#graphic-design-sect"><img src = "graphics/arrow.png" /></a></button>
