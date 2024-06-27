@@ -292,6 +292,10 @@ button {
 {
   color: black;
 }
+.view-projects-button h4
+{
+  margin: 0 auto;
+}
 .title-container
 {
   margin-top: 20vw;
@@ -540,7 +544,7 @@ button {
 #subsection-get-started {
   top: 20vw;
   position: absolute;
-  left: 20vw;
+  left: 16vw;
   text-align: right;
 }
 #icons {
@@ -577,15 +581,16 @@ button {
 .mt-heavy {
   margin-top: 10em;
 }
+.mt-lessheavy
+{
+  margin-top: 10vh;
+}
 
 @media only screen and (max-width: 600px) {
   #name
   {
     display:none;
     color: black;
-  }
-  h1
-  {
     font-size: 2em;
   }
   .mynavbar

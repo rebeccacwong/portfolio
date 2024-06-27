@@ -77,10 +77,10 @@
 
 .slick-prev {
   margin-top: -5%;
-  left: -60px;
+  left: -4vw;
 }
 [dir="rtl"] .slick-prev {
-  right: -25px;
+  right: -4vw;
   left: auto;
 }
 .slick-prev:before {
@@ -94,11 +94,11 @@
 
 .slick-next {
   margin-top: -5%;
-  right: -25px;
+  right: -2vw;
 }
 [dir="rtl"] .slick-next {
   right: auto;
-  left: -25px;
+  left: -2vw;
 }
 .slick-next:before {
   content: "→";
