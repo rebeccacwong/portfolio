@@ -65,9 +65,12 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   /* overflow: hidden; */
-  scroll-behavior: smooth;
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth !important;
   cursor: default;
 }
+.sections
+{}
 *:focus {
   outline: none;
 }
@@ -167,6 +170,10 @@ button {
 .secret h1:hover {
   cursor: pointer;
   color: #3B4862;
+}
+#portrait-small
+{
+  width: 6vh;
 }
 
 
@@ -527,6 +534,22 @@ button {
   margin-top: 10em;
 }
 
-/** TABLETS */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  #name
+  {
+    display:none;
+    color: black;
+  }
+  h1
+  {
+    font-size: 2em;
+  }
+  .mynavbar
+  {
+    height: 8vw;
+  }
+  #portrait-small
+  {
+    width: 5.5vw;
+  }
 }
