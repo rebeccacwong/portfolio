@@ -57,7 +57,7 @@ function updateColumnsWithTextOnTop()
         console.log("Error! Not expecting there to be more than 1 design header per page. Got " + designHeader.length + " headers.");
         return;
     }
-    designHeader.item(0).style.marginTop = "1vw";
+    designHeader.item(0).style.marginTop = "3vw";
 }
 
 function updateColumnsWithTextToSide()

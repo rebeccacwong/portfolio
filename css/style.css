@@ -194,7 +194,7 @@ button {
 .nav-option
 {
   color: white;
-  font-size: 2.2vh;
+  font-size: max(1.4vw, 0.9em);
   font-weight: normal;
 }
 .nav-option:hover {
@@ -587,6 +587,26 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+  #name
+  {
+    display:none;
+    color: black;
+    font-size: 2em;
+  }
+  .mynavbar
+  {
+    height: 8vw;
+  }
+  #portrait-small
+  {
+    width: 5.5vw;
+  }
+}
+
+@media only screen and (min-device-width: 320px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+{
   #name
   {
     display:none;
