@@ -458,35 +458,13 @@ button {
 #cs-sect {
   background-color: #ecdcd8;
 }
-#cs-text {
-  z-index: 10;
-  top: 0;
-  bottom: 0;
-  left: 6vw;
-  top: 10vw;
-  position: relative;
-  width: 30vw;
-}
-#baker-text {
-  position: relative;
-  top: 10vw;
-  left: 10vw;
-  width: 35vw;
-  z-index: 10;
-}
-#design-text {
-  position: relative;
-  margin: 0 auto;
-  width: 35vw;
-  z-index: 10;
-}
 #bake-sect {
   background-color: #ecdcd8;
-  background-image: url("../graphics/kitchen-04.png");
+  background-image: url("../graphics/bake-background.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left;
-  background-size: 94% 96%;
+  background-position: bottom left;
+  background-size: 96% 100%;
   background-attachment: relative;
   object-fit: scale-down;
 }
@@ -497,15 +475,6 @@ button {
   background-size: cover;
   background-attachment: relative;
   /* object-fit: scale-down; */
-}
-#bake-call {
-  bottom: 7vw;
-  left: 49.5vw;
-  position: absolute;
-}
-#design-call {
-  top: 33vw;
-  left: 23vw;
 }
 .arrow-slide {
   position: relative;
