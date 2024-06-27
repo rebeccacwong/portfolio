@@ -172,13 +172,13 @@ tr {
   font-weight: bold;
 }
 .carousel-control-prev {
-  margin-left: 4em;
+  margin-left: 3vw;
 }
 .carousel-control-next {
-  margin-right: 4em;
+  margin-right: 3vw;
 }
 .card-body h1 {
-  font-size: 3vw;
+  font-size: 3em;
   text-align: center;
   margin: 0 auto;
   margin-bottom: -0.2em;

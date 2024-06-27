@@ -1,3 +1,8 @@
+//
+// This Javascript file is for changing the appearance of the files 
+// within design-subpages/* and making them responsive. 
+//
+
 var smallWidth = false;
 
 function checkSize() {
