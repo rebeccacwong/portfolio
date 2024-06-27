@@ -34,41 +34,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
   <title>Rebecca Wong • programming</title>
-
-  <button id="navbar-button"><img src="../graphics/sidebar.png" /></button>
-
   <div class="mynavbar">
-    <img src="../graphics/x.png" id="navbar-x" onclick="toggleNav()" />
-    <div class="navbar-container">
-      <h2><a href="../index.html"> about </a></h2>
-      <h2><a href="../portfolio.html">visual design</a></h2>
-      <h2><a href="../programming.html">programming</a></h2>
-      <h2><a href="../product.html">product design</a></h2>
-      <h2><a href="../index.html#get-started">contact</a></h2>
-    </div>
-  </div>
-
-  <div class="header">
-    <table class="secret">
-      <tr>
-        <td>
-          <h1
-            style="font-size: 5vh; margin: 0"
-            onclick="location.href='../index.html'"
-          >
-            Rebecca Wong
-          </h1>
-        </td>
+      <table class="secret ml-0">
+        <tr>
         <td>
           <img
             src="../graphics/portrait.png"
-            style="width: 7vh"
-            onclick="location.href='../index.html'"
+            style="width: 6vh"
+            onclick="location.href='index.html'"
           />
-        </td>
-      </tr>
-    </table>
-  </div>
+          </td>
+          <td>
+          <h1 style="font-size: 4.2vh; margin: 0; color: white" onclick="location.href='index.html'">
+            Rebecca Wong
+          </h1>
+          </td>
+        </tr>
+        </table>
+        <table class="secret mr-0">
+        <tr>
+          <td><a href="../programming.html"><h4 class="nav-option">programming</h4></a></td>
+          <td><a href = "../portfolio.html"><h4 class="nav-option">visual design</h4></a></td>
+          <td><a href="../product.html"><h4 class="nav-option">product design</h4></a></td>
+        </tr>
+        </table>
+    </div>
 
   <body>
     <div class="container">
@@ -95,14 +85,16 @@
         </div>
 
         <div class="col-lg px-sm-5">
-          <h2 class="design-header">Raytracer for 3D Computer Graphics Rendering</h2>
+          <h3 class="design-header">Raytracer for 3D Computer Graphics Rendering</h3>
           <p>
             I created a raytracer that rasterizes 3D models by sampling screen points, transforming them into world space, and then checking for ray intersections with objects. To accelerate naive raytracing, I implemented a bounding volume hierarchy which partitioned the space into nodes. The nodes were organized in a binary tree structure, such that rays would only be cast in a certain area of the 3D space if the bounding box was intersected and thus there are pixels in that region that must be rasterized. 
           </p>
           <p>
             With the rays created, I implemented direct illumination by sampling rays from light sources to objects to calculate the radiance on an object. To create a more realistic scene, I implemented global illumination, which accounts for bounces of light off of surfaces by generating new rays at the intersection points according to the material type, as different materials reflect light in different ways. The sampling method was optimized using adaptive sampling, which will check for convergence using the mean and variance of already collected samples and stop sampling earlier if they have converged.
           </p>
-          <a href="../programming.html"><h5>view more programming projects</h5></a>
+          <button class="view-projects-button">
+              <a href="../programming.html"><h5>view more programming projects</h5></a>
+          </button>
 
           <!-- <a href="../portfolio.html"><h5>view more designs</h5></a> -->
         </div>

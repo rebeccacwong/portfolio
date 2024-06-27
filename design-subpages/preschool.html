@@ -20,27 +20,32 @@
 
 <title> Rebecca Wong • visual design</title>
 
-<button id = 'navbar-button'> <img src = '../graphics/sidebar.png' /> </button>
+  <div class="mynavbar">
+    <table class="secret ml-0">
+      <tr>
+      <td>
+        <img
+          src="../graphics/portrait.png"
+          style="width: 6vh"
+          onclick="location.href='index.html'"
+        />
+        </td>
+        <td>
+        <h1 style="font-size: 4.2vh; margin: 0; color: white" onclick="location.href='index.html'">
+          Rebecca Wong
+        </h1>
+        </td>
+      </tr>
+      </table>
+      <table class="secret mr-0">
+      <tr>
+        <td><a href="../programming.html"><h4 class="nav-option">programming</h4></a></td>
+        <td><a href = "../portfolio.html"><h4 class="nav-option">visual design</h4></a></td>
+        <td><a href="../product.html"><h4 class="nav-option">product design</h4></a></td>
+      </tr>
+      </table>
+  </div>
 
-<div class = 'mynavbar'>
-	<img src = "../graphics/x.png" id = "navbar-x" onclick = "toggleNav()" />
-	<div class = 'navbar-container'>
-		<h2><a href = "../index.html"> about </a></h2>
-		<h2><a href = "../portfolio.html"> visual design</a></h2>
-		<h2><a href="../programming.html">programming</a></h2>
-		<h2><a href="../product.html">product design</a></h2>
-		<h2><a href = "../index.html#get-started">contact</a></h2>
-	</div>
-</div>
-
-<div class = 'header'>
-	<table class = 'secret'>
-		<tr>
-			<td><h1 style = "font-size: 5vh; margin: 0" onclick="location.href='../index.html'">Rebecca Wong</h1></td>
-			<td><img src = "../graphics/portrait.png" style = "width: 7vh" onclick="location.href='../index.html'" /></td>
-		</tr>
-	</table>
-</div>
 
 <body>
 	<div class="container">
@@ -50,10 +55,12 @@
 				<img src = '../designs/preschool preview night orange.png' class = "design-crop"/>
 			</div>
 			<div class="col-lg px-sm-5">
-				<h2 class = "design-header">preschool preview night </h2>
+				<h3 class = "design-header">preschool preview night </h3>
 				<p>This logo was designed for a recurring event hosted by the<a href = "https://www.ggmg.org/"> Golden Gate Mother's Group.</p></a>
 				<p>The client wanted something that would represent the event and also tie back in with the central branding of the organization, so the logo matches the organization's color scheme and Golden Gate symbol. Balloons are also a central theme at the event.</p>
-				<a href = "../portfolio.html"><h5>view more designs</h5></a>
+				<button class="view-projects-button">
+            		<a href = "../portfolio.html"><h5>view more designs</h5></a>
+          		</button>
 			</div>
 		</div>
 	</div>

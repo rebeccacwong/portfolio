@@ -35,39 +35,30 @@
 
   <title>Rebecca Wong • programming</title>
 
-  <button id="navbar-button"><img src="../graphics/sidebar.png" /></button>
-
   <div class="mynavbar">
-    <img src="../graphics/x.png" id="navbar-x" onclick="toggleNav()" />
-    <div class="navbar-container">
-      <h2><a href="../index.html"> about </a></h2>
-      <h2><a href="../portfolio.html">visual design</a></h2>
-      <h2><a href="../programming.html">programming</a></h2>
-      <h2><a href="../product.html">product design</a></h2>
-      <h2><a href="../index.html#get-started">contact</a></h2>
-    </div>
-  </div>
-
-  <div class="header">
-    <table class="secret">
+    <table class="secret ml-0">
       <tr>
-        <td>
-          <h1
-            style="font-size: 5vh; margin: 0"
-            onclick="location.href='../index.html'"
-          >
-            Rebecca Wong
-          </h1>
+      <td>
+        <img
+          src="../graphics/portrait.png"
+          style="width: 6vh"
+          onclick="location.href='index.html'"
+        />
         </td>
         <td>
-          <img
-            src="../graphics/portrait.png"
-            style="width: 7vh"
-            onclick="location.href='../index.html'"
-          />
+        <h1 style="font-size: 4.2vh; margin: 0; color: white" onclick="location.href='index.html'">
+          Rebecca Wong
+        </h1>
         </td>
       </tr>
-    </table>
+      </table>
+      <table class="secret mr-0">
+      <tr>
+        <td><a href="../programming.html"><h4 class="nav-option">programming</h4></a></td>
+        <td><a href = "../portfolio.html"><h4 class="nav-option">visual design</h4></a></td>
+        <td><a href="../product.html"><h4 class="nav-option">product design</h4></a></td>
+      </tr>
+      </table>
   </div>
 
   <body>
@@ -97,7 +88,7 @@
         </div>
 
         <div class="col-lg px-sm-5">
-          <h2 class="design-header">You are the Shopkeeper in an RPG (game)</h2>
+          <h3 class="design-header">You are the Shopkeeper in an RPG (game)</h3>
           <p>
             You Are the Shopkeeper in an RPG is a game that I designed and developed 
             in a team of 4 in 9 weeks. We created the game using Unity and <b>it can be played 
@@ -111,7 +102,9 @@
             I primarily took on an artist role, but contributed to the code when necessary. 
             I also created sound effects and one of the game songs from scratch.
           </p>
-          <a href="../programming.html"><h5>view more programming projects</h5></a>
+          <button class="view-projects-button">
+              <a href="../programming.html"><h5>view more programming projects</h5></a>
+          </button>
         </div>
       </div>
     </div>
