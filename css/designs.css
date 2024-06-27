@@ -22,7 +22,7 @@
 /* GENERAL */
 	p {
 		font-family: 'poppinslight';
-		font-size: 1vw;
+		font-size: 0.85em;
 		
 	}
 	b {
@@ -40,90 +40,6 @@
 		margin: 0 auto;
 /*		border: 1px solid green;*/
 	}
-
-
-/** CUSTOM FONTS **/
-	@font-face {
-	    font-family: 'poppinslight_italic';
-	    src: url('./fonts/poppins-lightitalic-webfont.woff2') format('woff2'),
-	         url('./fonts/poppins-lightitalic-webfont.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-
-	}
-
-
-
-
-	@font-face {
-	    font-family: 'poppinsitalic';
-	    src: url('./fonts/poppins-italic-webfont.woff2') format('woff2'),
-	         url('./fonts/poppins-italic-webfont.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-
-	}
-
-
-
-
-	@font-face {
-	    font-family: 'poppinslight';
-	    src: url('./fonts/poppins-light-webfont.woff2') format('woff2'),
-	         url('./fonts/poppins-light-webfont.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-
-	}
-
-
-
-
-	@font-face {
-	    font-family: 'poppinsregular';
-	    src: url('./fonts/poppins-regular-webfont.woff2') format('woff2'),
-	         url('./fonts/poppins-regular-webfont.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-
-	}
-
-
-
-
-	@font-face {
-	    font-family: 'poppinsbold';
-	    src: url('./fonts/poppins-bold-webfont.woff2') format('woff2'),
-	         url('./fonts/poppins-bold-webfont.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-
-	}
-
-
-
-
-	@font-face {
-	    font-family: 'poppinsbold_italic';
-	    src: url('./fonts/poppins-bolditalic-webfont.woff2') format('woff2'),
-	         url('./fonts/poppins-bolditalic-webfont.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-
-	}
-
-
-
-
-	@font-face {
-	    font-family: 'questrialregular';
-	    src: url('.fonts/questrial-regular-webfont.woff2') format('woff2'),
-	         url('questrial-regular-webfont.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-
-	}
-
 
 /** GRAPHIC DESIGN */
 	.design-crop {

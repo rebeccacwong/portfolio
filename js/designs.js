@@ -1,4 +1,4 @@
-const nav = $(".navigation");
+// const nav = $(".navigation");
 
 const carouselSlide = $("#slide");
 const carouselImages = $("#slide").children();
@@ -10,8 +10,7 @@ var counter = 1;
 console.log(carouselImages[0])
 var size = carouselImages[0].clientHeight;
 
-const docWidth = document.documentElement.clientWidth;
-
+var docWidth = document.documentElement.clientWidth;
 
 nextBtn.addEventListener('click', changeSlide);
 
@@ -56,7 +55,3 @@ $(".down-arrow-bounce").hover(
   }
   );
 
-// $('#navbar-icon').addEventListener('click', function() {
-// 	//.slideToggle()
-// 	$('.navbar').next().animate({width: 'toggle'});
-// })
